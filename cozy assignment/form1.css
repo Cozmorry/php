@@ -1,0 +1,67 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #c9c3c3;
+  margin: 0;
+  padding: 20px;
+}
+
+form {
+  max-width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(68, 5, 5, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #1c2cc2;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1e54c7;
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Rating styles */
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.rating input[type="radio"] {
+  display: none;
+}
+
+.rating label {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input[type="radio"]:checked ~ label {
+  color: #7a3288;
+}
